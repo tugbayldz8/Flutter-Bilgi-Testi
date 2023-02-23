@@ -12,7 +12,7 @@ class BilgiTesti extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: Colors.purpleAccent,
+            backgroundColor: Colors.brown[300],
             body: SafeArea(
                 child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 10.0),
@@ -78,6 +78,18 @@ class _SoruSayfasiState extends State<SoruSayfasi> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
+        Text(
+          '***BİLGİ TESTİ***',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 35,
+              color: Colors.brown[900],
+              fontWeight: FontWeight.bold),
+        ),
+        Divider(
+          height: 20,
+          color: Colors.black,
+        ),
         Expanded(
           flex: 4,
           child: Padding(
